@@ -1,0 +1,17 @@
+<div class="container pt-3">
+  <h1>Stupid Coaching</h1>
+</div>
+
+<div class="m-3 p-3 border-5 border-bottom">
+  <%= @ask.capitalize %>
+  <br>
+  <em>-You</em>
+</div>
+
+<div class="m-3 p-3 border-5 border-left" id="answer">
+  <%= @answer.capitalize %>
+    <br>
+    <em>-Your coach</em>
+</div>
+
+<%= link_to 'Ask a new question', ask_path, class:"text-primary text-decoration-none m-3" %>
